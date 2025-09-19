@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb listings exmaple</title>
+
+    <link rel="icon" href="./favicon.png" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Apartment Listings</h1>
+      <nav>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <form action="#">
+          <label>Search <input id="inSearch" type="text" /></label>
+        </form>
+      </section>
+
+      <section>
+        <h2>Listings</h2>
+
+        <div class="listingsGroup">
+          <div class="listing">
+            <h3 class="title">
+              Soma Apartment (<span class="price">$2450</span>,
+              <span class="sqft">450sqft</span>)
+            </h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
+              architecto perspiciatis, provident temporibus voluptatibus
+              assumenda in nihil optio odio itaque quam nesciunt expedita
+              eligendi reiciendis velit obcaecati aperiam corrupti! Laboriosam.
+            </p>
+            <div class="controls">
+              <button>Msg</button>
+              <button>Rent</button>
+            </div>
+          </div>
+          <!-- /listing -->
+
+          <div class="listing">
+            <h3 class="title">
+              Soma Apartment (<span class="price">$2450</span>,
+              <span class="sqft">450sqft</span>)
+            </h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
+              architecto perspiciatis, provident temporibus voluptatibus
+              assumenda in nihil optio odio itaque quam nesciunt expedita
+              eligendi reiciendis velit obcaecati aperiam corrupti! Laboriosam.
+            </p>
+            <div class="controls">
+              <button>Msg</button>
+              <button>Rent</button>
+            </div>
+          </div>
+          <!-- /listing -->
+
+          <div class="listing">
+            <h3 class="title">
+              Soma Apartment (<span class="price">$2450</span>,
+              <span class="sqft">450sqft</span>)
+            </h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
+              architecto perspiciatis, provident temporibus voluptatibus
+              assumenda in nihil optio odio itaque quam nesciunt expedita
+              eligendi reiciendis velit obcaecati aperiam corrupti! Laboriosam.
+            </p>
+            <div class="controls">
+              <button>Msg</button>
+              <button>Rent</button>
+            </div>
+          </div>
+          <!-- /listing -->
+
+          <div class="listing">
+            <h3 class="title">
+              Soma Apartment (<span class="price">$2450</span>,
+              <span class="sqft">450sqft</span>)
+            </h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
+              architecto perspiciatis, provident temporibus voluptatibus
+              assumenda in nihil optio odio itaque quam nesciunt expedita
+              eligendi reiciendis velit obcaecati aperiam corrupti! Laboriosam.
+            </p>
+            <div class="controls">
+              <button>Msg</button>
+              <button>Rent</button>
+            </div>
+          </div>
+          <!-- /listing -->
+
+          <div class="listing">
+            <h3 class="title">
+              Soma Apartment (<span class="price">$2450</span>,
+              <span class="sqft">450sqft</span>)
+            </h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
+              architecto perspiciatis, provident temporibus voluptatibus
+              assumenda in nihil optio odio itaque quam nesciunt expedita
+              eligendi reiciendis velit obcaecati aperiam corrupti! Laboriosam.
+            </p>
+            <div class="controls">
+              <button>Msg</button>
+              <button>Rent</button>
+            </div>
+          </div>
+          <!-- /listing -->
+
+          <div class="listing">
+            <h3 class="title">
+              Soma Apartment (<span class="price">$2450</span>,
+              <span class="sqft">450sqft</span>)
+            </h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
+              architecto perspiciatis, provident temporibus voluptatibus
+              assumenda in nihil optio odio itaque quam nesciunt expedita
+              eligendi reiciendis velit obcaecati aperiam corrupti! Laboriosam.
+            </p>
+            <div class="controls">
+              <button>Msg</button>
+              <button>Rent</button>
+            </div>
+          </div>
+          <!-- /listing -->
+        </div>
+        <!-- /listingsGroup -->
+      </section>
+    </main>
+
+    <footer>
+      <p>Made by John with 🏋🏼‍♀️❤️</p>
+    </footer>
+
+    <script type="module">
+      class MyComponent extends HTMLElement {
+        constructor() {
+          super();
+          const shadowRoot = this.attachShadow({ mode: "open" });
+          shadowRoot.innerHTML = `
+          <p>
+            I'm a web component!
+          </p>
+          `;
+        }
+
+        connectedCallback() {
+          console.log("Custom element added to page.");
+        }
+
+        disconnectedCallback() {
+          console.log("Custom element removed from page.");
+        }
+
+        adoptedCallback() {
+          console.log("Custom element moved to new page.");
+        }
+
+        attributeChangedCallback(name, oldValue, newValue) {
+          console.log(`Attribute ${name} has changed.`);
+        }
+      }
+
+      customElements.define("my-component", MyComponent);
+    </script>
+
+    <my-component>Web?</my-component>
+    component?
+  </body>
+</html>
