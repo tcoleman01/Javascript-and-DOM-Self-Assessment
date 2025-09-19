@@ -1,0 +1,45 @@
+# Airbnb Listings Demo Page
+
+A simple client-side app that loads and displays the first **50** Airbnb-style listings via **AJAX (fetch + await)** and renders each card with:
+
+- Listing **name**
+- **Description**
+- **Amenities**
+- **Host** (name + photo, with “Superhost” badge)
+- **Price**
+- **Thumbnail**
+- **Creative addition**: 
+  - 🔎 Live **search** (filters by title/description/amenities/host)
+  - ⭐ **Favorites** (persisted in `localStorage`)
+
+> **Live demo:** **[https://YOUR_USERNAME.github.io/YOUR_REPO_NAME](https://YOUR_USERNAME.github.io/YOUR_REPO_NAME)**  
+> *(Replace with your actual deployment URL once GitHub Pages is enabled.)*
+
+---
+
+## 📁 Project Structure
+├── index.html
+├── about.html
+├── css/
+│ └── main.css
+├── js/
+│ └── main.js
+├── package.json ← houses the "listings" array (data source)
+└── package-lock.json
+
+### Data Source (No extra files required)
+Instead of a separate `data/*.json`, this project reads listings from **`package.json`** under a top-level `"listings"` array.  
+This keeps your current file names unchanged, per the assignment constraints we discussed.
+
+`main.js` tries `./package.json` first (then `./package-lock.json`), reads `json.listings`, and renders the **first 50**.
+
+---
+
+## 🚀 How to Run Locally
+
+Because browsers block `fetch()` from `file://`, run a local server:
+
+**VS Code Live Server**
+1. Install the *Live Server* extension.
+2. Right-click `index.html` → **Open with Live Server**.
+

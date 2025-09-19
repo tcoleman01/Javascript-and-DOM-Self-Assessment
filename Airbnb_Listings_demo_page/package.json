@@ -1,0 +1,525 @@
+{
+  "name": "airbnblistings",
+  "version": "1.0.0",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "John Alexis Guerra Gomez",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@html-eslint/eslint-plugin": "^0.32.0",
+    "@html-eslint/parser": "^0.32.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-html": "^8.1.2",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2"
+  },
+  "listings": [
+    {
+      "id": "sf-loft-101-1",
+      "name": "Sunny SoMa Loft #1",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Balcony"],
+      "host": { "name": "Alex P. 1", "picture_url": "https://placehold.co/64x64?text=H1", "is_superhost": true },
+      "price": "$185",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+1"
+    },
+    {
+      "id": "mission-studio-202-2",
+      "name": "Mission District Studio #2",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Coffee maker"],
+      "host": { "name": "María L. 2", "picture_url": "https://placehold.co/64x64?text=H2", "is_superhost": false },
+      "price": "$190",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+2"
+    },
+    {
+      "id": "north-beach-303-3",
+      "name": "North Beach 1BR with View #3",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Balcony"],
+      "host": { "name": "Sam G. 3", "picture_url": "https://placehold.co/64x64?text=H3", "is_superhost": true },
+      "price": "$195",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+3"
+    },
+    {
+      "id": "sf-loft-101-4",
+      "name": "Sunny SoMa Loft #4",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Coffee maker"],
+      "host": { "name": "Alex P. 4", "picture_url": "https://placehold.co/64x64?text=H4", "is_superhost": true },
+      "price": "$200",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+4"
+    },
+    {
+      "id": "mission-studio-202-5",
+      "name": "Mission District Studio #5",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Balcony"],
+      "host": { "name": "María L. 5", "picture_url": "https://placehold.co/64x64?text=H5", "is_superhost": false },
+      "price": "$205",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+5"
+    },
+    {
+      "id": "north-beach-303-6",
+      "name": "North Beach 1BR with View #6",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Coffee maker"],
+      "host": { "name": "Sam G. 6", "picture_url": "https://placehold.co/64x64?text=H6", "is_superhost": true },
+      "price": "$210",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+6"
+    },
+    {
+      "id": "sf-loft-101-7",
+      "name": "Sunny SoMa Loft #7",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Balcony"],
+      "host": { "name": "Alex P. 7", "picture_url": "https://placehold.co/64x64?text=H7", "is_superhost": true },
+      "price": "$215",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+7"
+    },
+    {
+      "id": "mission-studio-202-8",
+      "name": "Mission District Studio #8",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Coffee maker"],
+      "host": { "name": "María L. 8", "picture_url": "https://placehold.co/64x64?text=H8", "is_superhost": false },
+      "price": "$220",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+8"
+    },
+    {
+      "id": "north-beach-303-9",
+      "name": "North Beach 1BR with View #9",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Balcony"],
+      "host": { "name": "Sam G. 9", "picture_url": "https://placehold.co/64x64?text=H9", "is_superhost": true },
+      "price": "$225",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+9"
+    },
+    {
+      "id": "sf-loft-101-10",
+      "name": "Sunny SoMa Loft #10",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Coffee maker"],
+      "host": { "name": "Alex P. 10", "picture_url": "https://placehold.co/64x64?text=H10", "is_superhost": true },
+      "price": "$230",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+10"
+    },
+    {
+      "id": "mission-studio-202-11",
+      "name": "Mission District Studio #11",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Balcony"],
+      "host": { "name": "María L. 11", "picture_url": "https://placehold.co/64x64?text=H11", "is_superhost": false },
+      "price": "$235",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+11"
+    },
+    {
+      "id": "north-beach-303-12",
+      "name": "North Beach 1BR with View #12",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Coffee maker"],
+      "host": { "name": "Sam G. 12", "picture_url": "https://placehold.co/64x64?text=H12", "is_superhost": true },
+      "price": "$240",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+12"
+    },
+    {
+      "id": "sf-loft-101-13",
+      "name": "Sunny SoMa Loft #13",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Balcony"],
+      "host": { "name": "Alex P. 13", "picture_url": "https://placehold.co/64x64?text=H13", "is_superhost": true },
+      "price": "$245",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+13"
+    },
+    {
+      "id": "mission-studio-202-14",
+      "name": "Mission District Studio #14",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Coffee maker"],
+      "host": { "name": "María L. 14", "picture_url": "https://placehold.co/64x64?text=H14", "is_superhost": false },
+      "price": "$250",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+14"
+    },
+    {
+      "id": "north-beach-303-15",
+      "name": "North Beach 1BR with View #15",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Balcony"],
+      "host": { "name": "Sam G. 15", "picture_url": "https://placehold.co/64x64?text=H15", "is_superhost": true },
+      "price": "$255",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+15"
+    },
+    {
+      "id": "sf-loft-101-16",
+      "name": "Sunny SoMa Loft #16",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Coffee maker"],
+      "host": { "name": "Alex P. 16", "picture_url": "https://placehold.co/64x64?text=H16", "is_superhost": true },
+      "price": "$260",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+16"
+    },
+    {
+      "id": "mission-studio-202-17",
+      "name": "Mission District Studio #17",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Balcony"],
+      "host": { "name": "María L. 17", "picture_url": "https://placehold.co/64x64?text=H17", "is_superhost": false },
+      "price": "$265",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+17"
+    },
+    {
+      "id": "north-beach-303-18",
+      "name": "North Beach 1BR with View #18",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Coffee maker"],
+      "host": { "name": "Sam G. 18", "picture_url": "https://placehold.co/64x64?text=H18", "is_superhost": true },
+      "price": "$270",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+18"
+    },
+    {
+      "id": "sf-loft-101-19",
+      "name": "Sunny SoMa Loft #19",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Balcony"],
+      "host": { "name": "Alex P. 19", "picture_url": "https://placehold.co/64x64?text=H19", "is_superhost": true },
+      "price": "$275",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+19"
+    },
+    {
+      "id": "mission-studio-202-20",
+      "name": "Mission District Studio #20",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Coffee maker"],
+      "host": { "name": "María L. 20", "picture_url": "https://placehold.co/64x64?text=H20", "is_superhost": false },
+      "price": "$180",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+20"
+    },
+    {
+      "id": "north-beach-303-21",
+      "name": "North Beach 1BR with View #21",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Balcony"],
+      "host": { "name": "Sam G. 21", "picture_url": "https://placehold.co/64x64?text=H21", "is_superhost": true },
+      "price": "$185",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+21"
+    },
+    {
+      "id": "sf-loft-101-22",
+      "name": "Sunny SoMa Loft #22",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Coffee maker"],
+      "host": { "name": "Alex P. 22", "picture_url": "https://placehold.co/64x64?text=H22", "is_superhost": true },
+      "price": "$190",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+22"
+    },
+    {
+      "id": "mission-studio-202-23",
+      "name": "Mission District Studio #23",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Balcony"],
+      "host": { "name": "María L. 23", "picture_url": "https://placehold.co/64x64?text=H23", "is_superhost": false },
+      "price": "$195",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+23"
+    },
+    {
+      "id": "north-beach-303-24",
+      "name": "North Beach 1BR with View #24",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Coffee maker"],
+      "host": { "name": "Sam G. 24", "picture_url": "https://placehold.co/64x64?text=H24", "is_superhost": true },
+      "price": "$200",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+24"
+    },
+    {
+      "id": "sf-loft-101-25",
+      "name": "Sunny SoMa Loft #25",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Balcony"],
+      "host": { "name": "Alex P. 25", "picture_url": "https://placehold.co/64x64?text=H25", "is_superhost": true },
+      "price": "$205",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+25"
+    },
+    {
+      "id": "mission-studio-202-26",
+      "name": "Mission District Studio #26",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Coffee maker"],
+      "host": { "name": "María L. 26", "picture_url": "https://placehold.co/64x64?text=H26", "is_superhost": false },
+      "price": "$210",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+26"
+    },
+    {
+      "id": "north-beach-303-27",
+      "name": "North Beach 1BR with View #27",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Balcony"],
+      "host": { "name": "Sam G. 27", "picture_url": "https://placehold.co/64x64?text=H27", "is_superhost": true },
+      "price": "$215",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+27"
+    },
+    {
+      "id": "sf-loft-101-28",
+      "name": "Sunny SoMa Loft #28",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Coffee maker"],
+      "host": { "name": "Alex P. 28", "picture_url": "https://placehold.co/64x64?text=H28", "is_superhost": true },
+      "price": "$220",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+28"
+    },
+    {
+      "id": "mission-studio-202-29",
+      "name": "Mission District Studio #29",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Balcony"],
+      "host": { "name": "María L. 29", "picture_url": "https://placehold.co/64x64?text=H29", "is_superhost": false },
+      "price": "$225",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+29"
+    },
+    {
+      "id": "north-beach-303-30",
+      "name": "North Beach 1BR with View #30",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Coffee maker"],
+      "host": { "name": "Sam G. 30", "picture_url": "https://placehold.co/64x64?text=H30", "is_superhost": true },
+      "price": "$230",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+30"
+    },
+    {
+      "id": "sf-loft-101-31",
+      "name": "Sunny SoMa Loft #31",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Balcony"],
+      "host": { "name": "Alex P. 31", "picture_url": "https://placehold.co/64x64?text=H31", "is_superhost": true },
+      "price": "$235",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+31"
+    },
+    {
+      "id": "mission-studio-202-32",
+      "name": "Mission District Studio #32",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Coffee maker"],
+      "host": { "name": "María L. 32", "picture_url": "https://placehold.co/64x64?text=H32", "is_superhost": false },
+      "price": "$240",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+32"
+    },
+    {
+      "id": "north-beach-303-33",
+      "name": "North Beach 1BR with View #33",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Balcony"],
+      "host": { "name": "Sam G. 33", "picture_url": "https://placehold.co/64x64?text=H33", "is_superhost": true },
+      "price": "$245",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+33"
+    },
+    {
+      "id": "sf-loft-101-34",
+      "name": "Sunny SoMa Loft #34",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Coffee maker"],
+      "host": { "name": "Alex P. 34", "picture_url": "https://placehold.co/64x64?text=H34", "is_superhost": true },
+      "price": "$250",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+34"
+    },
+    {
+      "id": "mission-studio-202-35",
+      "name": "Mission District Studio #35",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Balcony"],
+      "host": { "name": "María L. 35", "picture_url": "https://placehold.co/64x64?text=H35", "is_superhost": false },
+      "price": "$255",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+35"
+    },
+    {
+      "id": "north-beach-303-36",
+      "name": "North Beach 1BR with View #36",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Coffee maker"],
+      "host": { "name": "Sam G. 36", "picture_url": "https://placehold.co/64x64?text=H36", "is_superhost": true },
+      "price": "$260",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+36"
+    },
+    {
+      "id": "sf-loft-101-37",
+      "name": "Sunny SoMa Loft #37",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Balcony"],
+      "host": { "name": "Alex P. 37", "picture_url": "https://placehold.co/64x64?text=H37", "is_superhost": true },
+      "price": "$265",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+37"
+    },
+    {
+      "id": "mission-studio-202-38",
+      "name": "Mission District Studio #38",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Coffee maker"],
+      "host": { "name": "María L. 38", "picture_url": "https://placehold.co/64x64?text=H38", "is_superhost": false },
+      "price": "$270",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+38"
+    },
+    {
+      "id": "north-beach-303-39",
+      "name": "North Beach 1BR with View #39",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Balcony"],
+      "host": { "name": "Sam G. 39", "picture_url": "https://placehold.co/64x64?text=H39", "is_superhost": true },
+      "price": "$275",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+39"
+    },
+    {
+      "id": "sf-loft-101-40",
+      "name": "Sunny SoMa Loft #40",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Coffee maker"],
+      "host": { "name": "Alex P. 40", "picture_url": "https://placehold.co/64x64?text=H40", "is_superhost": true },
+      "price": "$180",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+40"
+    },
+    {
+      "id": "mission-studio-202-41",
+      "name": "Mission District Studio #41",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Balcony"],
+      "host": { "name": "María L. 41", "picture_url": "https://placehold.co/64x64?text=H41", "is_superhost": false },
+      "price": "$185",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+41"
+    },
+    {
+      "id": "north-beach-303-42",
+      "name": "North Beach 1BR with View #42",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Coffee maker"],
+      "host": { "name": "Sam G. 42", "picture_url": "https://placehold.co/64x64?text=H42", "is_superhost": true },
+      "price": "$190",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+42"
+    },
+    {
+      "id": "sf-loft-101-43",
+      "name": "Sunny SoMa Loft #43",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Balcony"],
+      "host": { "name": "Alex P. 43", "picture_url": "https://placehold.co/64x64?text=H43", "is_superhost": true },
+      "price": "$195",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+43"
+    },
+    {
+      "id": "mission-studio-202-44",
+      "name": "Mission District Studio #44",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Coffee maker"],
+      "host": { "name": "María L. 44", "picture_url": "https://placehold.co/64x64?text=H44", "is_superhost": false },
+      "price": "$200",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+44"
+    },
+    {
+      "id": "north-beach-303-45",
+      "name": "North Beach 1BR with View #45",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Balcony"],
+      "host": { "name": "Sam G. 45", "picture_url": "https://placehold.co/64x64?text=H45", "is_superhost": true },
+      "price": "$205",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+45"
+    },
+    {
+      "id": "sf-loft-101-46",
+      "name": "Sunny SoMa Loft #46",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Coffee maker"],
+      "host": { "name": "Alex P. 46", "picture_url": "https://placehold.co/64x64?text=H46", "is_superhost": true },
+      "price": "$210",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+46"
+    },
+    {
+      "id": "mission-studio-202-47",
+      "name": "Mission District Studio #47",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Balcony"],
+      "host": { "name": "María L. 47", "picture_url": "https://placehold.co/64x64?text=H47", "is_superhost": false },
+      "price": "$215",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+47"
+    },
+    {
+      "id": "north-beach-303-48",
+      "name": "North Beach 1BR with View #48",
+      "description": "Classic SF vibes and a peek at the bay.",
+      "amenities": ["Wifi", "Kitchen", "Dishwasher", "Paid parking", "TV", "Coffee maker"],
+      "host": { "name": "Sam G. 48", "picture_url": "https://placehold.co/64x64?text=H48", "is_superhost": true },
+      "price": "$220",
+      "picture_url": "https://placehold.co/800x500?text=North+Beach+1BR",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+48"
+    },
+    {
+      "id": "sf-loft-101-49",
+      "name": "Sunny SoMa Loft #49",
+      "description": "Bright industrial loft close to coffee and transit.",
+      "amenities": ["Wifi", "Kitchen", "Washer", "Dryer", "Air conditioning", "Self check-in", "Balcony"],
+      "host": { "name": "Alex P. 49", "picture_url": "https://placehold.co/64x64?text=H49", "is_superhost": true },
+      "price": "$225",
+      "picture_url": "https://placehold.co/800x500?text=Sunny+SoMa+Loft",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+49"
+    },
+    {
+      "id": "mission-studio-202-50",
+      "name": "Mission District Studio #50",
+      "description": "Cozy studio with plants, near amazing tacos.",
+      "amenities": ["Wifi", "Kitchenette", "Heating", "Essentials", "Long stays allowed", "Coffee maker"],
+      "host": { "name": "María L. 50", "picture_url": "https://placehold.co/64x64?text=H50", "is_superhost": false },
+      "price": "$230",
+      "picture_url": "https://placehold.co/800x500?text=Mission+Studio",
+      "thumbnail_url": "https://placehold.co/600x400?text=Listing+50"
+    }
+  ]
+}

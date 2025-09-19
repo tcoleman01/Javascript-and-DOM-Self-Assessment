@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb Listings Example</title>
+
+    <link rel="icon" href="./favicon.png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <header class="container py-3">
+      <h1 class="mb-2">Apartment Listings</h1>
+      <nav>
+        <ul class="d-flex gap-3 list-unstyled m-0">
+          <li><a href="./">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="mb-4">
+        <form action="#" role="search" class="d-flex" onsubmit="return false;">
+          <label class="me-2 fw-semibold" for="inSearch">Search</label>
+          <input id="inSearch" type="search" class="form-control" placeholder="Search listings..." />
+        </form>
+      </section>
+
+      <section>
+        <h2 class="mb-3">Listings</h2>
+        <!-- JS will inject the first 50 cards here -->
+        <div id="listings" class="row"></div>
+      </section>
+    </main>
+
+    <footer class="container py-4">
+      <p>Made by John with 🏋🏼‍♀️❤️</p>
+    </footer>
+
+    <!-- Optional demo web component -->
+    <script type="module">
+      class MyComponent extends HTMLElement {
+        constructor() {
+          super();
+          const shadowRoot = this.attachShadow({ mode: "open" });
+          shadowRoot.innerHTML = `
+            <p>I'm a web component!</p>
+          `;
+        }
+
+        connectedCallback() {
+          console.log("Custom element added to page.");
+        }
+
+        disconnectedCallback() {
+          console.log("Custom element removed from page.");
+        }
+
+        adoptedCallback() {
+          console.log("Custom element moved to new page.");
+        }
+
+        attributeChangedCallback(name, oldValue, newValue) {
+          // FIXED: remove backslash before backticks
+          console.log(`Attribute ${name} has changed.`);
+        }
+      }
+
+      customElements.define("my-component", MyComponent);
+    </script>
+
+    <my-component></my-component>
+
+    <!-- Bootstrap bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Your app logic that fetches JSON and populates #listings -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
